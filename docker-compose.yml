@@ -16,7 +16,12 @@ services:
     depends_on:
       - postgres
     environment:
-      DATABASE_URL: postgres://todoapp@postgres/todos
+      DB_CONNECTION: pgsql
+      DB_DATABASE: todos
+      DB_USERNAME: todoapp
+      DB_PASSWORD: passw0rd
+      DB_HOST: postgres
+      APP_ENV: development
   postgres:
     image: postgres:9.6.2-alpine
     environment:

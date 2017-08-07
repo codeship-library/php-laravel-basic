@@ -5,9 +5,9 @@ return [
     'connections' => [
       'pgsql' => [
           'driver' => 'pgsql',
-          'host' => env('DB_HOST', 'localhost'),
-          'database' => env('DB_DATABASE', 'forge'),
-          'username' => env('DB_USERNAME', 'forge'),
+          'host' => env('DB_HOST', 'postgres'),
+          'database' => env('DB_DATABASE', 'codeship_development'),
+          'username' => env('DB_USERNAME', 'codeship'),
           'password' => env('DB_PASSWORD', ''),
           'charset' => 'utf8',
           'prefix' => '',
